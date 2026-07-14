@@ -1,0 +1,21 @@
+{
+  "method": "lora",
+  "run_name": "lora",
+  "dataset": "cub_200_2011",
+  "seed": 0,
+  "num_classes": 200,
+  "train_size": 5394,
+  "val_size": 600,
+  "test_size": 5794,
+  "best_epoch": 16,
+  "best_val_top1": 81.83333333333334,
+  "test_top1_at_best_val": 82.2920262340352,
+  "test_loss_at_best_val": 0.6602326499611335,
+  "trainable_params_m": 0.448712,
+  "trainable_params_percent_of_86m": 0.5217581395348837,
+  "total_params_m": 86.247368,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 10.479271411895752,
+  "mean_epoch_time_s": 8.935238256454468,
+  "checkpoint_saved": false
+}

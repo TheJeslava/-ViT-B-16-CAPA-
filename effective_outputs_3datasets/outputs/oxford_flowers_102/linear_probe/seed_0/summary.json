@@ -1,0 +1,21 @@
+{
+  "method": "linear_probe",
+  "run_name": "linear_probe",
+  "dataset": "oxford_flowers_102",
+  "seed": 0,
+  "num_classes": 102,
+  "train_size": 1020,
+  "val_size": 1020,
+  "test_size": 6149,
+  "best_epoch": 78,
+  "best_val_top1": 89.50980392156863,
+  "test_top1_at_best_val": 88.51845828590015,
+  "test_loss_at_best_val": 0.5208866355438158,
+  "trainable_params_m": 0.078438,
+  "trainable_params_percent_of_86m": 0.09120697674418604,
+  "total_params_m": 85.877094,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 0.9512057304382324,
+  "mean_epoch_time_s": 1.2235773015022278,
+  "checkpoint_saved": false
+}

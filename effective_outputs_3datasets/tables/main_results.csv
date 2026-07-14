@@ -1,0 +1,2 @@
+dataset,method,run_name,seed,best_epoch,best_val_top1,test_top1_at_best_val,trainable_params_m,trainable_params_percent_of_86m,inference_flops_g,peak_train_memory_gb,mean_epoch_time_s,router_mean_entropy,router_effective_experts,expert_load_min,expert_load_max_min_ratio
+oxford_flowers_102,cvpt_expert_adapter,cvpt_expert_adapter,0,95,95.7843137254902,94.9260042283298,7.457334,8.671318604651162,,16.813026905059814,3.6405461692810057,0.5866351127624512,1.8138796091079712,0.09446963667869568,2.321681022644043

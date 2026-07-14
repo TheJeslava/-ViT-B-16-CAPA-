@@ -1,0 +1,33 @@
+{
+  "method": "cvpt_expert_adapter",
+  "run_name": "cvpt_expert_adapter",
+  "dataset": "cub_200_2011",
+  "seed": 0,
+  "num_classes": 200,
+  "train_size": 5394,
+  "val_size": 600,
+  "test_size": 5794,
+  "best_epoch": 28,
+  "best_val_top1": 83.16666666666667,
+  "test_top1_at_best_val": 81.34276838108389,
+  "test_loss_at_best_val": 0.7166588767709755,
+  "trainable_params_m": 7.532696,
+  "trainable_params_percent_of_86m": 8.758948837209303,
+  "total_params_m": 121.679768,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 16.813941955566406,
+  "mean_epoch_time_s": 16.04205986738205,
+  "checkpoint_saved": true,
+  "router_mean_entropy": 0.43916264176368713,
+  "router_effective_experts": 1.5954358577728271,
+  "expert_load_mean": [
+    0.09800295531749725,
+    0.16237272322177887,
+    0.14709798991680145,
+    0.19437575340270996,
+    0.26323771476745605,
+    0.1349114179611206
+  ],
+  "expert_load_min": 0.09800295531749725,
+  "expert_load_max_min_ratio": 2.686018228530884
+}

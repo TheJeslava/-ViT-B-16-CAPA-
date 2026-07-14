@@ -1,0 +1,21 @@
+{
+  "method": "linear_probe",
+  "run_name": "linear_probe",
+  "dataset": "vtab1k_cifar100",
+  "seed": 0,
+  "num_classes": 100,
+  "train_size": 1000,
+  "val_size": 1000,
+  "test_size": 10000,
+  "best_epoch": 50,
+  "best_val_top1": 71.5,
+  "test_top1_at_best_val": 67.2,
+  "test_loss_at_best_val": 1.207436713409424,
+  "trainable_params_m": 0.0769,
+  "trainable_params_percent_of_86m": 0.08941860465116279,
+  "total_params_m": 85.875556,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 0.6442604064941406,
+  "mean_epoch_time_s": 1.3537372326850892,
+  "checkpoint_saved": false
+}

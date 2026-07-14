@@ -1,0 +1,21 @@
+{
+  "method": "full_finetune",
+  "run_name": "full_finetune",
+  "dataset": "cub_200_2011",
+  "seed": 0,
+  "num_classes": 200,
+  "train_size": 5394,
+  "val_size": 600,
+  "test_size": 5794,
+  "best_epoch": 69,
+  "best_val_top1": 83.5,
+  "test_top1_at_best_val": 82.3610631687953,
+  "test_loss_at_best_val": 0.7307395533519364,
+  "trainable_params_m": 85.952456,
+  "trainable_params_percent_of_86m": 99.94471627906977,
+  "total_params_m": 85.952456,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 9.430091381072998,
+  "mean_epoch_time_s": 9.18864284992218,
+  "checkpoint_saved": false
+}

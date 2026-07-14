@@ -1,0 +1,21 @@
+{
+  "method": "ssf",
+  "run_name": "ssf",
+  "dataset": "oxford_flowers_102",
+  "seed": 0,
+  "num_classes": 102,
+  "train_size": 1020,
+  "val_size": 1020,
+  "test_size": 6149,
+  "best_epoch": 54,
+  "best_val_top1": 93.82352941176471,
+  "test_top1_at_best_val": 93.1858838835583,
+  "test_loss_at_best_val": 0.29629969469394735,
+  "trainable_params_m": 0.115302,
+  "trainable_params_percent_of_86m": 0.13407209302325582,
+  "total_params_m": 85.913958,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 7.616516590118408,
+  "mean_epoch_time_s": 2.049324975013733,
+  "checkpoint_saved": false
+}

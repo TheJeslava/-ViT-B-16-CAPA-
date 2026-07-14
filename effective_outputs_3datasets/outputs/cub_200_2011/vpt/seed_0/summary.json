@@ -1,0 +1,21 @@
+{
+  "method": "vpt",
+  "run_name": "vpt",
+  "dataset": "cub_200_2011",
+  "seed": 0,
+  "num_classes": 200,
+  "train_size": 5394,
+  "val_size": 600,
+  "test_size": 5794,
+  "best_epoch": 70,
+  "best_val_top1": 78.5,
+  "test_top1_at_best_val": 76.66551605108734,
+  "test_loss_at_best_val": 0.886545993405702,
+  "trainable_params_m": 0.159944,
+  "trainable_params_percent_of_86m": 0.1859813953488372,
+  "total_params_m": 85.9586,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 6.382272243499756,
+  "mean_epoch_time_s": 7.252410471439362,
+  "checkpoint_saved": false
+}

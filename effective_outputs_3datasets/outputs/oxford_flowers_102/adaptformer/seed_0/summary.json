@@ -1,0 +1,21 @@
+{
+  "method": "adaptformer",
+  "run_name": "adaptformer",
+  "dataset": "oxford_flowers_102",
+  "seed": 0,
+  "num_classes": 102,
+  "train_size": 1020,
+  "val_size": 1020,
+  "test_size": 6149,
+  "best_epoch": 52,
+  "best_val_top1": 95.68627450980392,
+  "test_top1_at_best_val": 94.11286388030574,
+  "test_loss_at_best_val": 0.2312206273977544,
+  "trainable_params_m": 1.268082,
+  "trainable_params_percent_of_86m": 1.4745139534883722,
+  "total_params_m": 87.066738,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 6.662377834320068,
+  "mean_epoch_time_s": 2.0400283432006834,
+  "checkpoint_saved": false
+}

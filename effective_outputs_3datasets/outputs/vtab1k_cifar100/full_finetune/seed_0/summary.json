@@ -1,0 +1,21 @@
+{
+  "method": "full_finetune",
+  "run_name": "full_finetune",
+  "dataset": "vtab1k_cifar100",
+  "seed": 0,
+  "num_classes": 100,
+  "train_size": 1000,
+  "val_size": 1000,
+  "test_size": 10000,
+  "best_epoch": 86,
+  "best_val_top1": 68.89999999999999,
+  "test_top1_at_best_val": 65.32,
+  "test_loss_at_best_val": 1.3869133140563965,
+  "trainable_params_m": 85.875556,
+  "trainable_params_percent_of_86m": 99.85529767441861,
+  "total_params_m": 85.875556,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 9.424221515655518,
+  "mean_epoch_time_s": 1.8993921518325805,
+  "checkpoint_saved": false
+}

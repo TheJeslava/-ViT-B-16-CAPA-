@@ -1,0 +1,33 @@
+{
+  "method": "expert_adapter_pool",
+  "run_name": "expert_adapter_pool",
+  "dataset": "oxford_flowers_102",
+  "seed": 0,
+  "num_classes": 102,
+  "train_size": 1020,
+  "val_size": 1020,
+  "test_size": 6149,
+  "best_epoch": 53,
+  "best_val_top1": 94.90196078431372,
+  "test_top1_at_best_val": 93.23467230443974,
+  "test_loss_at_best_val": 0.2547284145823609,
+  "trainable_params_m": 7.365174,
+  "trainable_params_percent_of_86m": 8.564155813953489,
+  "total_params_m": 93.16383,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 14.54839277267456,
+  "mean_epoch_time_s": 3.228570840358734,
+  "checkpoint_saved": true,
+  "router_mean_entropy": 0.5454736948013306,
+  "router_effective_experts": 1.747469186782837,
+  "expert_load_mean": [
+    0.12244542688131332,
+    0.06591178476810455,
+    0.23802389204502106,
+    0.0879700779914856,
+    0.16542083024978638,
+    0.3202283978462219
+  ],
+  "expert_load_min": 0.06591178476810455,
+  "expert_load_max_min_ratio": 4.858438968658447
+}

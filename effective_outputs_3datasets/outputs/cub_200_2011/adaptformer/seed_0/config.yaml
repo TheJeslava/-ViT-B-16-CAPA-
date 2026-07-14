@@ -1,0 +1,301 @@
+project:
+  name: para_cvpt
+  method_display_name: Para-CVPT
+  backbone: vit_base_patch16_224
+  pretrain: imagenet1k
+  pretrained_weights: true
+  input_size: 224
+  total_backbone_params_m: 86.0
+paths:
+  data_root: data
+experiment:
+  method: adaptformer
+  dataset: cub_200_2011
+  seed: 0
+  run_name: adaptformer
+datasets:
+  cifar100_full:
+    name: CIFAR100
+    split: full_train_test_with_train_val_split
+    num_classes: 100
+    metric: top1
+  vtab1k_cifar100:
+    name: VTAB-1K-CIFAR100
+    split: vtab_1000_train_with_val_and_test
+    num_classes: 100
+    metric: top1
+  cub_200_2011:
+    name: CUB-200-2011
+    split: classic_train_test_with_train_val_split
+    num_classes: 200
+    metric: top1
+  oxford_flowers_102:
+    name: Oxford-Flowers-102
+    split: classic_train_val_test
+    num_classes: 102
+    metric: top1
+data:
+  train_transform:
+    random_resized_crop: 224
+    random_horizontal_flip: 0.5
+    normalize: imagenet
+  eval_transform:
+    resize_shorter_side: 256
+    center_crop: 224
+    normalize: imagenet
+  num_workers: 12
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 4
+methods:
+  main_table:
+  - linear_probe
+  - full_finetune
+  - adaptformer
+  - ssf
+  - lora
+  - vpt
+  - cvpt
+  - para_cvpt
+para_cvpt:
+  expert_bank:
+    scope: global_12_layers
+    num_experts_m: 12
+    tokens_per_expert_t: 8
+    init: normal
+    init_std: 0.02
+  router:
+    per_layer: true
+    input: patch_token_gap
+    hidden_dim: 16
+    activation: gelu
+    softmax_temperature: 1.0
+    temperature_schedule: none
+    train_noise_std: 0.01
+    expert_dropout: 0.1
+    use_topk: false
+  cvpt_cross_attention:
+    insert_position: after_self_attention
+    query_source: image_tokens
+    key_value_source: routed_prompt
+    weight_init: copy_from_pretrained_self_attention
+    freeze_qkv_o: true
+    residual_scale:
+      type: fixed
+      value: 1.0
+  trainable:
+    backbone: false
+    prompt_expert_bank: true
+    routers: true
+    classifier_head: true
+    cross_attention_projection: false
+  collapse_guard:
+    entropy_loss:
+      enabled: true
+      form: negative_entropy
+      alpha: 0.02
+      normalize_by_log_m: true
+    batch_load_kl:
+      enabled: false
+      beta: 0.01
+    log_router_statistics: true
+baselines:
+  adaptformer:
+    bottleneck: 64
+  lora:
+    rank: 8
+    alpha: 16.0
+  vpt:
+    prompt_tokens: 8
+training:
+  seed: 0
+  optimizer:
+    name: adamw
+    lr: 0.001
+    weight_decay: 0.05
+    betas:
+    - 0.9
+    - 0.999
+  scheduler:
+    name: cosine
+    warmup_epochs: 10
+  epochs: 100
+  batch_size: 128
+  gradient_accumulation_steps: 1
+  amp: true
+  amp_dtype: float16
+  grad_clip_norm: 1.0
+  early_stopping: false
+  validation:
+    select_best_by: val_top1
+    test_only_best_checkpoint: true
+  method_overrides:
+    linear_probe:
+      optimizer:
+        lr: 0.001
+    full_finetune:
+      optimizer:
+        lr: 5.0e-05
+    adaptformer:
+      optimizer:
+        lr: 0.001
+    ssf:
+      optimizer:
+        lr: 0.001
+    lora:
+      optimizer:
+        lr: 0.001
+    vpt:
+      optimizer:
+        lr: 0.005
+    cvpt:
+      optimizer:
+        lr: 0.001
+    shared_cvpt:
+      optimizer:
+        lr: 0.001
+    routed_cvpt:
+      optimizer:
+        lr: 0.001
+    para_cvpt:
+      optimizer:
+        lr: 0.001
+performance:
+  allow_tf32: true
+  matmul_precision: high
+  cudnn_benchmark: true
+  deterministic: false
+  compile: false
+fair_comparison:
+  single_seed_default: true
+  rerun_more_seeds_only_if: para_cvpt_is_consistently_worse_than_all_key_baselines
+  same_for_all_methods:
+  - dataset_split
+  - input_size
+  - train_transform
+  - eval_transform
+  - optimizer_name
+  - learning_rate
+  - weight_decay
+  - scheduler
+  - epochs
+  - batch_size
+  - seed
+metrics:
+  main:
+  - top1_accuracy
+  - trainable_params_m
+  - trainable_params_percent
+  - inference_flops_g
+  - peak_train_memory_gb
+  - epoch_time_s
+  process:
+  - train_loss_per_epoch
+  - val_top1_per_epoch
+  - best_epoch
+  - best_val_top1
+  - test_top1_at_best_val
+  router:
+  - mean_normalized_entropy
+  - effective_num_experts
+  - expert_load_mean
+  - expert_load_min
+  - expert_load_max_min_ratio
+outputs:
+  root: outputs
+  per_run_files:
+  - config.yaml
+  - train.log
+  - metrics.csv
+  - summary.json
+  - router_stats.npz
+  checkpoint_policy:
+    save_best_for:
+    - para_cvpt
+    - cvpt
+    - shared_cvpt
+    - routed_cvpt
+    skip_checkpoints_for:
+    - linear_probe
+    - full_finetune
+    - adaptformer
+    - ssf
+    - lora
+    - vpt
+  tables:
+    main_results: outputs/tables/main_results.csv
+    ablation_results: outputs/tables/ablation_results.csv
+  figures:
+    route_heatmaps: outputs/figures/route_heatmaps
+    expert_load_bars: outputs/figures/expert_load_bars
+    convergence_curves: outputs/figures/convergence_curves
+ablations:
+  core_structure:
+    dataset_first: cifar100_full
+    variants:
+      cvpt:
+        shared_expert_bank: false
+        router: false
+      shared_cvpt:
+        shared_expert_bank: true
+        router: false
+      routed_cvpt:
+        shared_expert_bank: false
+        router: true
+      para_cvpt:
+        shared_expert_bank: true
+        router: true
+  collapse_guard:
+    dataset_first: cifar100_full
+    variants:
+      no_collapse_guard:
+        entropy_loss: false
+        train_noise_std: 0.0
+        expert_dropout: 0.0
+      entropy_only:
+        entropy_loss: true
+        train_noise_std: 0.0
+        expert_dropout: 0.0
+      noise_only:
+        entropy_loss: false
+        train_noise_std: 0.01
+        expert_dropout: 0.0
+      dropout_only:
+        entropy_loss: false
+        train_noise_std: 0.0
+        expert_dropout: 0.1
+      full_guard:
+        entropy_loss: true
+        train_noise_std: 0.01
+        expert_dropout: 0.1
+  capacity_and_scope:
+    dataset_first: cifar100_full
+    capacity_grid:
+    - num_experts_m: 6
+      tokens_per_expert_t: 8
+    - num_experts_m: 12
+      tokens_per_expert_t: 8
+    - num_experts_m: 18
+      tokens_per_expert_t: 8
+    - num_experts_m: 12
+      tokens_per_expert_t: 4
+    - num_experts_m: 12
+      tokens_per_expert_t: 16
+    scope_grid:
+    - global_12_layers
+    - group_6_layers
+    - group_3_layers
+    - layer_wise
+visualization:
+  enabled: true
+  samples_per_dataset: 3
+  route_heatmap:
+    shape: layers_by_experts
+    layers: 12
+  expert_load_bar:
+    aggregate_over: test_set_and_layers
+  convergence_curve:
+    methods:
+    - para_cvpt
+    - cvpt
+    - vpt

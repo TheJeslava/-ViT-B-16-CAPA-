@@ -1,0 +1,33 @@
+{
+  "method": "cvpt_expert_adapter",
+  "run_name": "cvpt_expert_adapter",
+  "dataset": "oxford_flowers_102",
+  "seed": 0,
+  "num_classes": 102,
+  "train_size": 1020,
+  "val_size": 1020,
+  "test_size": 6149,
+  "best_epoch": 95,
+  "best_val_top1": 95.7843137254902,
+  "test_top1_at_best_val": 94.9260042283298,
+  "test_loss_at_best_val": 0.20610116404001258,
+  "trainable_params_m": 7.457334,
+  "trainable_params_percent_of_86m": 8.671318604651162,
+  "total_params_m": 121.604406,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 16.813026905059814,
+  "mean_epoch_time_s": 3.6405461692810057,
+  "checkpoint_saved": true,
+  "router_mean_entropy": 0.5866351127624512,
+  "router_effective_experts": 1.8138796091079712,
+  "expert_load_mean": [
+    0.18496356904506683,
+    0.10739468783140182,
+    0.219328373670578,
+    0.19233804941177368,
+    0.20150619745254517,
+    0.09446963667869568
+  ],
+  "expert_load_min": 0.09446963667869568,
+  "expert_load_max_min_ratio": 2.321681022644043
+}

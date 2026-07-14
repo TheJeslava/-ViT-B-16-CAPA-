@@ -1,0 +1,21 @@
+{
+  "method": "ssf",
+  "run_name": "ssf",
+  "dataset": "cub_200_2011",
+  "seed": 0,
+  "num_classes": 200,
+  "train_size": 5394,
+  "val_size": 600,
+  "test_size": 5794,
+  "best_epoch": 22,
+  "best_val_top1": 81.83333333333334,
+  "test_top1_at_best_val": 81.11839834311357,
+  "test_loss_at_best_val": 0.6918575772960966,
+  "trainable_params_m": 0.190664,
+  "trainable_params_percent_of_86m": 0.22170232558139535,
+  "total_params_m": 85.98932,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 7.618945121765137,
+  "mean_epoch_time_s": 7.788983597755432,
+  "checkpoint_saved": false
+}

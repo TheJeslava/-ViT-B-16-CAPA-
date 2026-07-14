@@ -1,0 +1,33 @@
+{
+  "method": "cvpt_expert_adapter",
+  "run_name": "cvpt_expert_adapter",
+  "dataset": "vtab1k_cifar100",
+  "seed": 0,
+  "num_classes": 100,
+  "train_size": 1000,
+  "val_size": 1000,
+  "test_size": 10000,
+  "best_epoch": 28,
+  "best_val_top1": 75.3,
+  "test_top1_at_best_val": 72.08,
+  "test_loss_at_best_val": 0.999279496383667,
+  "trainable_params_m": 7.455796,
+  "trainable_params_percent_of_86m": 8.66953023255814,
+  "total_params_m": 121.602868,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 16.81300926208496,
+  "mean_epoch_time_s": 3.2151440143585206,
+  "checkpoint_saved": true,
+  "router_mean_entropy": 0.5458331108093262,
+  "router_effective_experts": 1.7402544021606445,
+  "expert_load_mean": [
+    0.19091391563415527,
+    0.07091481238603592,
+    0.1365659087896347,
+    0.16214340925216675,
+    0.27567604184150696,
+    0.1637854278087616
+  ],
+  "expert_load_min": 0.07091481238603592,
+  "expert_load_max_min_ratio": 3.887425422668457
+}

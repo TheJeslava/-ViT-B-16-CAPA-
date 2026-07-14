@@ -1,0 +1,21 @@
+{
+  "method": "linear_probe",
+  "run_name": "linear_probe",
+  "dataset": "cub_200_2011",
+  "seed": 0,
+  "num_classes": 200,
+  "train_size": 5394,
+  "val_size": 600,
+  "test_size": 5794,
+  "best_epoch": 62,
+  "best_val_top1": 78.16666666666666,
+  "test_top1_at_best_val": 77.92544011045909,
+  "test_loss_at_best_val": 0.8122330333987392,
+  "trainable_params_m": 0.1538,
+  "trainable_params_percent_of_86m": 0.17883720930232558,
+  "total_params_m": 85.952456,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 0.9512171745300293,
+  "mean_epoch_time_s": 3.3958937120437622,
+  "checkpoint_saved": false
+}

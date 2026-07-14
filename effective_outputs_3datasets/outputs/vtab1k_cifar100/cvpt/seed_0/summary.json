@@ -1,0 +1,21 @@
+{
+  "method": "cvpt",
+  "run_name": "cvpt",
+  "dataset": "vtab1k_cifar100",
+  "seed": 0,
+  "num_classes": 100,
+  "train_size": 1000,
+  "val_size": 1000,
+  "test_size": 10000,
+  "best_epoch": 32,
+  "best_val_top1": 73.8,
+  "test_top1_at_best_val": 71.06,
+  "test_loss_at_best_val": 1.0638799682617188,
+  "trainable_params_m": 0.150628,
+  "trainable_params_percent_of_86m": 0.17514883720930233,
+  "total_params_m": 114.2977,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 3.853698253631592,
+  "mean_epoch_time_s": 2.1048563361167907,
+  "checkpoint_saved": true
+}

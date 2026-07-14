@@ -1,0 +1,21 @@
+{
+  "method": "adaptformer",
+  "run_name": "adaptformer",
+  "dataset": "cub_200_2011",
+  "seed": 0,
+  "num_classes": 200,
+  "train_size": 5394,
+  "val_size": 600,
+  "test_size": 5794,
+  "best_epoch": 17,
+  "best_val_top1": 81.66666666666667,
+  "test_top1_at_best_val": 81.2219537452537,
+  "test_loss_at_best_val": 0.6787295089658475,
+  "trainable_params_m": 1.343444,
+  "trainable_params_percent_of_86m": 1.5621441860465115,
+  "total_params_m": 87.1421,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 6.662374019622803,
+  "mean_epoch_time_s": 7.655929217338562,
+  "checkpoint_saved": false
+}

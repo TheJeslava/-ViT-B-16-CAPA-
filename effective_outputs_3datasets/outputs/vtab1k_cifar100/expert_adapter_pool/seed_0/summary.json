@@ -1,0 +1,33 @@
+{
+  "method": "expert_adapter_pool",
+  "run_name": "expert_adapter_pool",
+  "dataset": "vtab1k_cifar100",
+  "seed": 0,
+  "num_classes": 100,
+  "train_size": 1000,
+  "val_size": 1000,
+  "test_size": 10000,
+  "best_epoch": 21,
+  "best_val_top1": 76.1,
+  "test_top1_at_best_val": 71.28999999999999,
+  "test_loss_at_best_val": 1.011616188812256,
+  "trainable_params_m": 7.363636,
+  "trainable_params_percent_of_86m": 8.562367441860465,
+  "total_params_m": 93.162292,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 14.554341316223145,
+  "mean_epoch_time_s": 2.803703122138977,
+  "checkpoint_saved": true,
+  "router_mean_entropy": 0.5415381789207458,
+  "router_effective_experts": 1.7382149696350098,
+  "expert_load_mean": [
+    0.21407634019851685,
+    0.17598290741443634,
+    0.19271479547023773,
+    0.1112469956278801,
+    0.08208488672971725,
+    0.22389337420463562
+  ],
+  "expert_load_min": 0.08208488672971725,
+  "expert_load_max_min_ratio": 2.727583408355713
+}

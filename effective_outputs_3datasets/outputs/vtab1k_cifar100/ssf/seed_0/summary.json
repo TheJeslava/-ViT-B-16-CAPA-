@@ -1,0 +1,21 @@
+{
+  "method": "ssf",
+  "run_name": "ssf",
+  "dataset": "vtab1k_cifar100",
+  "seed": 0,
+  "num_classes": 100,
+  "train_size": 1000,
+  "val_size": 1000,
+  "test_size": 10000,
+  "best_epoch": 59,
+  "best_val_top1": 76.3,
+  "test_top1_at_best_val": 72.39999999999999,
+  "test_loss_at_best_val": 0.9898248237609863,
+  "trainable_params_m": 0.113764,
+  "trainable_params_percent_of_86m": 0.13228372093023255,
+  "total_params_m": 85.91242,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 4.09111213684082,
+  "mean_epoch_time_s": 2.0772733521461486,
+  "checkpoint_saved": false
+}

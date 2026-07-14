@@ -1,0 +1,21 @@
+{
+  "method": "lora",
+  "run_name": "lora",
+  "dataset": "vtab1k_cifar100",
+  "seed": 0,
+  "num_classes": 100,
+  "train_size": 1000,
+  "val_size": 1000,
+  "test_size": 10000,
+  "best_epoch": 31,
+  "best_val_top1": 76.1,
+  "test_top1_at_best_val": 71.77,
+  "test_loss_at_best_val": 0.9901079833984375,
+  "trainable_params_m": 0.371812,
+  "trainable_params_percent_of_86m": 0.4323395348837209,
+  "total_params_m": 86.170468,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 5.49418830871582,
+  "mean_epoch_time_s": 2.2634722328186037,
+  "checkpoint_saved": false
+}

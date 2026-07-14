@@ -1,0 +1,21 @@
+{
+  "method": "full_finetune",
+  "run_name": "full_finetune",
+  "dataset": "oxford_flowers_102",
+  "seed": 0,
+  "num_classes": 102,
+  "train_size": 1020,
+  "val_size": 1020,
+  "test_size": 6149,
+  "best_epoch": 81,
+  "best_val_top1": 96.27450980392157,
+  "test_top1_at_best_val": 94.56822247519922,
+  "test_loss_at_best_val": 0.2530819568258996,
+  "trainable_params_m": 85.877094,
+  "trainable_params_percent_of_86m": 99.85708604651163,
+  "total_params_m": 85.877094,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 9.42992115020752,
+  "mean_epoch_time_s": 2.3117360258102417,
+  "checkpoint_saved": false
+}

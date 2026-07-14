@@ -1,0 +1,21 @@
+{
+  "method": "lora",
+  "run_name": "lora",
+  "dataset": "oxford_flowers_102",
+  "seed": 0,
+  "num_classes": 102,
+  "train_size": 1020,
+  "val_size": 1020,
+  "test_size": 6149,
+  "best_epoch": 63,
+  "best_val_top1": 95.0,
+  "test_top1_at_best_val": 94.5844852821597,
+  "test_loss_at_best_val": 0.2254750037686692,
+  "trainable_params_m": 0.37335,
+  "trainable_params_percent_of_86m": 0.4341279069767442,
+  "total_params_m": 86.172006,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 10.478225708007812,
+  "mean_epoch_time_s": 2.25490394115448,
+  "checkpoint_saved": false
+}

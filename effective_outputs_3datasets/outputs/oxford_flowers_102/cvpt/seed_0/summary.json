@@ -1,0 +1,21 @@
+{
+  "method": "cvpt",
+  "run_name": "cvpt",
+  "dataset": "oxford_flowers_102",
+  "seed": 0,
+  "num_classes": 102,
+  "train_size": 1020,
+  "val_size": 1020,
+  "test_size": 6149,
+  "best_epoch": 80,
+  "best_val_top1": 94.31372549019608,
+  "test_top1_at_best_val": 93.26719791836071,
+  "test_loss_at_best_val": 0.30443688090069737,
+  "trainable_params_m": 0.152166,
+  "trainable_params_percent_of_86m": 0.17693720930232557,
+  "total_params_m": 114.299238,
+  "inference_flops_g": null,
+  "peak_train_memory_gb": 7.018756866455078,
+  "mean_epoch_time_s": 2.1548711180686952,
+  "checkpoint_saved": true
+}
