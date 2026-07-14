@@ -2,7 +2,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "linear_probe",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/linear_probe/seed_0",
+    "path": "outputs/vtab1k_cifar100/linear_probe/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 583,
@@ -22,7 +22,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "full_finetune",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/full_finetune/seed_0",
+    "path": "outputs/vtab1k_cifar100/full_finetune/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 600,
@@ -42,7 +42,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "adaptformer",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/adaptformer/seed_0",
+    "path": "outputs/vtab1k_cifar100/adaptformer/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 580,
@@ -62,7 +62,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "ssf",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/ssf/seed_0",
+    "path": "outputs/vtab1k_cifar100/ssf/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 578,
@@ -82,7 +82,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "lora",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/lora/seed_0",
+    "path": "outputs/vtab1k_cifar100/lora/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 568,
@@ -102,7 +102,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "vpt",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/vpt/seed_0",
+    "path": "outputs/vtab1k_cifar100/vpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 566,
@@ -122,7 +122,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "cvpt",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/cvpt/seed_0",
+    "path": "outputs/vtab1k_cifar100/cvpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 568,
@@ -143,7 +143,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "para_cvpt",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/para_cvpt/seed_0",
+    "path": "outputs/vtab1k_cifar100/para_cvpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 1089,
@@ -165,7 +165,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "cvpt_expert_adapter",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/cvpt_expert_adapter/seed_0",
+    "path": "outputs/vtab1k_cifar100/cvpt_expert_adapter/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 959,
@@ -187,7 +187,7 @@
   {
     "dataset": "vtab1k_cifar100",
     "method": "expert_adapter_pool",
-    "path": "effective_outputs_3datasets/outputs/vtab1k_cifar100/expert_adapter_pool/seed_0",
+    "path": "outputs/vtab1k_cifar100/expert_adapter_pool/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 972,
@@ -209,7 +209,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "linear_probe",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/linear_probe/seed_0",
+    "path": "outputs/cub_200_2011/linear_probe/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 605,
@@ -229,7 +229,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "full_finetune",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/full_finetune/seed_0",
+    "path": "outputs/cub_200_2011/full_finetune/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 591,
@@ -249,7 +249,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "adaptformer",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/adaptformer/seed_0",
+    "path": "outputs/cub_200_2011/adaptformer/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 599,
@@ -269,7 +269,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "ssf",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/ssf/seed_0",
+    "path": "outputs/cub_200_2011/ssf/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 586,
@@ -289,7 +289,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "lora",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/lora/seed_0",
+    "path": "outputs/cub_200_2011/lora/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 588,
@@ -309,7 +309,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "vpt",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/vpt/seed_0",
+    "path": "outputs/cub_200_2011/vpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 570,
@@ -329,7 +329,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "cvpt",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/cvpt/seed_0",
+    "path": "outputs/cub_200_2011/cvpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 585,
@@ -350,7 +350,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "para_cvpt",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/para_cvpt/seed_0",
+    "path": "outputs/cub_200_2011/para_cvpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 1115,
@@ -372,7 +372,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "cvpt_expert_adapter",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/cvpt_expert_adapter/seed_0",
+    "path": "outputs/cub_200_2011/cvpt_expert_adapter/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 983,
@@ -394,7 +394,7 @@
   {
     "dataset": "cub_200_2011",
     "method": "expert_adapter_pool",
-    "path": "effective_outputs_3datasets/outputs/cub_200_2011/expert_adapter_pool/seed_0",
+    "path": "outputs/cub_200_2011/expert_adapter_pool/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 983,
@@ -416,7 +416,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "linear_probe",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/linear_probe/seed_0",
+    "path": "outputs/oxford_flowers_102/linear_probe/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 614,
@@ -436,7 +436,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "full_finetune",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/full_finetune/seed_0",
+    "path": "outputs/oxford_flowers_102/full_finetune/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 613,
@@ -456,7 +456,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "adaptformer",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/adaptformer/seed_0",
+    "path": "outputs/oxford_flowers_102/adaptformer/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 610,
@@ -476,7 +476,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "ssf",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/ssf/seed_0",
+    "path": "outputs/oxford_flowers_102/ssf/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 594,
@@ -496,7 +496,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "lora",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/lora/seed_0",
+    "path": "outputs/oxford_flowers_102/lora/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 580,
@@ -516,7 +516,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "vpt",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/vpt/seed_0",
+    "path": "outputs/oxford_flowers_102/vpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 595,
@@ -536,7 +536,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "cvpt",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/cvpt/seed_0",
+    "path": "outputs/oxford_flowers_102/cvpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 598,
@@ -557,7 +557,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "para_cvpt",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/para_cvpt/seed_0",
+    "path": "outputs/oxford_flowers_102/para_cvpt/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 1123,
@@ -579,7 +579,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "cvpt_expert_adapter",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/cvpt_expert_adapter/seed_0",
+    "path": "outputs/oxford_flowers_102/cvpt_expert_adapter/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 988,
@@ -601,7 +601,7 @@
   {
     "dataset": "oxford_flowers_102",
     "method": "expert_adapter_pool",
-    "path": "effective_outputs_3datasets/outputs/oxford_flowers_102/expert_adapter_pool/seed_0",
+    "path": "outputs/oxford_flowers_102/expert_adapter_pool/seed_0",
     "exists": true,
     "summary.json": true,
     "summary.json_bytes": 984,

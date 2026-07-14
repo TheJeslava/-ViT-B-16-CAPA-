@@ -1,0 +1,182 @@
+[
+  {
+    "dataset": "vtab1k_cifar100",
+    "dataset_display": "VTAB-CIFAR100",
+    "method": "cvpt_expert_adapter",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/vtab1k_cifar100__cvpt_expert_adapter.npz",
+    "num_samples": 10000,
+    "num_layers": 12,
+    "num_experts": 6,
+    "num_classes": 100,
+    "accuracy": 72.08,
+    "figures": [
+      "figures/routing_heatmaps/vtab1k_cifar100__cvpt_expert_adapter__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__cvpt_expert_adapter__B_class_expert_preference.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__cvpt_expert_adapter__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__cvpt_expert_adapter__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/vtab1k_cifar100/cvpt_expert_adapter/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  },
+  {
+    "dataset": "vtab1k_cifar100",
+    "dataset_display": "VTAB-CIFAR100",
+    "method": "expert_adapter_pool",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/vtab1k_cifar100__expert_adapter_pool.npz",
+    "num_samples": 10000,
+    "num_layers": 12,
+    "num_experts": 6,
+    "num_classes": 100,
+    "accuracy": 71.28999999999999,
+    "figures": [
+      "figures/routing_heatmaps/vtab1k_cifar100__expert_adapter_pool__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__expert_adapter_pool__B_class_expert_preference.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__expert_adapter_pool__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__expert_adapter_pool__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/vtab1k_cifar100/expert_adapter_pool/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  },
+  {
+    "dataset": "vtab1k_cifar100",
+    "dataset_display": "VTAB-CIFAR100",
+    "method": "para_cvpt",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/vtab1k_cifar100__para_cvpt.npz",
+    "num_samples": 10000,
+    "num_layers": 12,
+    "num_experts": 12,
+    "num_classes": 100,
+    "accuracy": 70.22,
+    "figures": [
+      "figures/routing_heatmaps/vtab1k_cifar100__para_cvpt__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__para_cvpt__B_class_expert_preference.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__para_cvpt__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/vtab1k_cifar100__para_cvpt__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/vtab1k_cifar100/para_cvpt/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  },
+  {
+    "dataset": "cub_200_2011",
+    "dataset_display": "CUB-200-2011",
+    "method": "cvpt_expert_adapter",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/cub_200_2011__cvpt_expert_adapter.npz",
+    "num_samples": 5794,
+    "num_layers": 12,
+    "num_experts": 6,
+    "num_classes": 200,
+    "accuracy": 81.34276838108389,
+    "figures": [
+      "figures/routing_heatmaps/cub_200_2011__cvpt_expert_adapter__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/cub_200_2011__cvpt_expert_adapter__B_class_expert_preference.png",
+      "figures/routing_heatmaps/cub_200_2011__cvpt_expert_adapter__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/cub_200_2011__cvpt_expert_adapter__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/cub_200_2011/cvpt_expert_adapter/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  },
+  {
+    "dataset": "cub_200_2011",
+    "dataset_display": "CUB-200-2011",
+    "method": "expert_adapter_pool",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/cub_200_2011__expert_adapter_pool.npz",
+    "num_samples": 5794,
+    "num_layers": 12,
+    "num_experts": 6,
+    "num_classes": 200,
+    "accuracy": 81.17017604418363,
+    "figures": [
+      "figures/routing_heatmaps/cub_200_2011__expert_adapter_pool__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/cub_200_2011__expert_adapter_pool__B_class_expert_preference.png",
+      "figures/routing_heatmaps/cub_200_2011__expert_adapter_pool__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/cub_200_2011__expert_adapter_pool__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/cub_200_2011/expert_adapter_pool/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  },
+  {
+    "dataset": "cub_200_2011",
+    "dataset_display": "CUB-200-2011",
+    "method": "para_cvpt",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/cub_200_2011__para_cvpt.npz",
+    "num_samples": 5794,
+    "num_layers": 12,
+    "num_experts": 12,
+    "num_classes": 200,
+    "accuracy": 81.01484294097342,
+    "figures": [
+      "figures/routing_heatmaps/cub_200_2011__para_cvpt__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/cub_200_2011__para_cvpt__B_class_expert_preference.png",
+      "figures/routing_heatmaps/cub_200_2011__para_cvpt__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/cub_200_2011__para_cvpt__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/cub_200_2011/para_cvpt/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  },
+  {
+    "dataset": "oxford_flowers_102",
+    "dataset_display": "Oxford-Flowers-102",
+    "method": "cvpt_expert_adapter",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/oxford_flowers_102__cvpt_expert_adapter.npz",
+    "num_samples": 6149,
+    "num_layers": 12,
+    "num_experts": 6,
+    "num_classes": 102,
+    "accuracy": 94.9260042283298,
+    "figures": [
+      "figures/routing_heatmaps/oxford_flowers_102__cvpt_expert_adapter__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/oxford_flowers_102__cvpt_expert_adapter__B_class_expert_preference.png",
+      "figures/routing_heatmaps/oxford_flowers_102__cvpt_expert_adapter__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/oxford_flowers_102__cvpt_expert_adapter__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/oxford_flowers_102/cvpt_expert_adapter/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  },
+  {
+    "dataset": "oxford_flowers_102",
+    "dataset_display": "Oxford-Flowers-102",
+    "method": "expert_adapter_pool",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/oxford_flowers_102__expert_adapter_pool.npz",
+    "num_samples": 6149,
+    "num_layers": 12,
+    "num_experts": 6,
+    "num_classes": 102,
+    "accuracy": 93.23467230443974,
+    "figures": [
+      "figures/routing_heatmaps/oxford_flowers_102__expert_adapter_pool__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/oxford_flowers_102__expert_adapter_pool__B_class_expert_preference.png",
+      "figures/routing_heatmaps/oxford_flowers_102__expert_adapter_pool__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/oxford_flowers_102__expert_adapter_pool__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/oxford_flowers_102/expert_adapter_pool/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  },
+  {
+    "dataset": "oxford_flowers_102",
+    "dataset_display": "Oxford-Flowers-102",
+    "method": "para_cvpt",
+    "checkpoint": null,
+    "record": "figures/routing_heatmaps/routing_records/oxford_flowers_102__para_cvpt.npz",
+    "num_samples": 6149,
+    "num_layers": 12,
+    "num_experts": 12,
+    "num_classes": 102,
+    "accuracy": 92.95820458611156,
+    "figures": [
+      "figures/routing_heatmaps/oxford_flowers_102__para_cvpt__A_layer_expert_mean.png",
+      "figures/routing_heatmaps/oxford_flowers_102__para_cvpt__B_class_expert_preference.png",
+      "figures/routing_heatmaps/oxford_flowers_102__para_cvpt__C_class_layer_entropy.png",
+      "figures/routing_heatmaps/oxford_flowers_102__para_cvpt__D_correct_wrong_delta.png"
+    ],
+    "checkpoint_source_path": "outputs/oxford_flowers_102/para_cvpt/seed_0/best_checkpoint.pth",
+    "checkpoint_excluded_from_github": true
+  }
+]
